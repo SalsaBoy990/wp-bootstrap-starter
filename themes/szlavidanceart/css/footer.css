@@ -1,0 +1,80 @@
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: rgb(206, 192, 200);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-to-top:active,
+.scroll-to-top:hover,
+.scroll-to-top:focus {
+  transition: 0.3s;
+  background: #ff009b;
+}
+
+/* Animations */
+.btn-entrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btn-exit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.footer-light {
+  width: 100%;
+  background: #C6BEC3;
+  background: linear-gradient(180deg, #ECE5E9 0%, #DEC2D4 100%);
+}
+
+.footer-social {
+  max-height: 58px;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .footer-social {
+    max-height: 58px;
+    margin-top: 21px;
+  }
+  .m-copyright {
+    margin-top: 8px;
+  }
+}
+
