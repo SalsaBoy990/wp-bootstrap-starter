@@ -1,3 +1,6 @@
+/* CUSTOM VARIABLES
+For convinience set the fonts, sizes, colors here and use them elsewhere
+*/
 @font-face {
   font-family: "Dancing Script";
   src: url('dancing-script-bold.ttf');
@@ -71,6 +74,22 @@ $white-opa60:     rgba(255, 255, 255, 0.60);
 $bg-light-gray:   #C6BEC3;
 $bg-dark-gray:    #74616D;
 
+$pink:            #FF009B;
+$pink-btn-text:   #DE0087;
+$pink-btn-icon:   #E91D98;
+$light-pink:      #F29DD1;
+
+$cyan-opa85:      rgba(120, 239, 255, 0.85);
+$libh-blue-opa90: rgba(166, 218, 255, 0.9);
+// $blue:            #2A3E94;
+// $blue:            rgb(97, 91, 197);
+$blue:            rgb(76, 70, 184);
+
+.bg-blue {
+  background: $blue;
+  color: $white;
+}
+
 .secondary-gray {
   color: $secondary-gray;
 }
@@ -83,7 +102,6 @@ $bg-dark-gray:    #74616D;
   color: $white;
 }
 
-
 .footer-dark {
   width: 100%;
   background-color: $bg-dark-gray;
@@ -92,20 +110,7 @@ $bg-dark-gray:    #74616D;
 }
 
 
-$pink:            #FF009B;
-$pink-btn-text:   #DE0087;
-$pink-btn-icon:   #E91D98;
-$light-pink:      #F29DD1;
-
-$cyan-opa85:      rgba(120, 239, 255, 0.85);
-$libh-blue-opa90: rgba(166, 218, 255, 0.9);
-// $blue:            #2A3E94;
-// $blue:            rgb(97, 91, 197);
-$blue:            rgb(76, 70, 184);
-
-
-
-// Function to calculate margin sizes (n times the baseline grid size)
+// Function to calculate margin or padding sizes (n times the baseline grid size)
 @function margin-size($n) {
   @return $n * $baseline;
 }

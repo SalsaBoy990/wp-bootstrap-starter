@@ -1,8 +1,15 @@
+// Import all scss files to use them here
+// Sass (node-sass) will convert this global.scss file to css/global.css that is wp_enqueued
+// To build it: npm run css-build
+// To watch changes: npm run css-watch (sometimes it breaks)
 @import "variables.scss";
 @import "base.scss";
 @import "margins-paddings.scss";
 @import "media-queries.scss";
 
+/* CUSTOM CSS RULES
+Include additional custom classes here
+*/
 .widget {
   margin-bottom: 0;
 }
@@ -12,7 +19,7 @@
 }
 
 .navbar-nav > a {
-  font-size: 16px;
+  // font-size: 16px;
   padding-top: 9px;
   padding-bottom: 9px;
   // color: #9bd9fd;
@@ -32,31 +39,11 @@
   border-radius: 0px 7px !important;
 }
 
-.white-subtitle {
-  color: #fff;
-  font-weight: 600;
-  font-size: 37px;
-  line-height: 52px;
-  text-transform: uppercase;
-  margin-top: -34px;
-  margin-left: 0px;
-}
-
-.black-subtitle {
-  color: #000000;
-  font-weight: 600;
-  font-size: 37px;
-  line-height: 52px;
-  text-transform: uppercase;
-  margin-top: -34px;
-  margin-left: 68px;
-}
-
 .gray-chevron {
-  color: #646f76;
+  color: $secondary-gray;
   background-color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
-  border-radius: 0px 7px;
+  border-radius: 6px;
 }
 
 .container-max-width {
@@ -71,13 +58,38 @@
   background-repeat: no-repeat;
 }
 
+
+
 @media (max-width: 991px) {
+  .bg-light-pink {
+    // margin-top: 0px !important;
+    background: url("szlavi-boritokep-4.png") !important;
+    background-size: cover !important;
+    background-position: top 100% !important;
+  }
+}
+@media (max-width: 828px) {
+  .bg-light-pink {
+    // margin-top: 0px !important;
+    background: url("szlavi-boritokep-3.png") !important;
+    background-size: cover !important;
+    background-position: top left !important;
+  }
+}
+
+@media (max-width: 576px) {
   .bg-light-pink {
     // margin-top: 0px !important;
     background: url("szlavi-boritokep-2.png") !important;
     background-size: cover !important;
-    background-position: 0% center !important;
+    background-position: top left !important;
   }
+}
+
+
+
+.m-btn-transparent {
+  background: rgba(255, 255, 255, 0.65);
 }
 
 .bg-dark-pink-1 {
@@ -109,13 +121,10 @@
   letter-spacing: 0.02em;
   color: #d6c5cf;
 }
-.quote-sign-right {
-  position: absolute;
-  top: -20px;
-  right: 15px;
-  font-size: 96px;
-  letter-spacing: 0.02em;
-  color: #d6c5cf;
+@media (max-width: 768px) {
+  .quote-sign {
+    right: 15px;
+  }
 }
 
 .testimonial-box {
@@ -224,25 +233,24 @@
 }
 
 .mt-minus100 {
-  margin-top: -110px !important;
+  margin-top: -70px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mt-minus100 {
-    margin-top: -70px !important;
+    margin-top: -100px !important;
   }
 }
 
 @media (max-width: 992px) {
   .text-bg-light {
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.5);
   }
   .text-bg-white {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
-/* CUSTOM CSS RULES */
 .app-logo {
   margin: 0;
   width: $baseline;
@@ -307,4 +315,36 @@
 
 .carousel-indicators {
   bottom: -30px;
+}
+
+.clear-float {
+  float: none !important;
+}
+
+.hide-under-xxl {
+  display: none !important;
+}
+
+@media (min-width: 1441px) {
+  .hide-under-xxl {
+    display: block !important;
+  }
+  .col-xxl-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  .col-xxl-4 {
+    flex: 0 0 33.333334% !important;
+    max-width: 33.333334% !important;
+  }
+  .offset-xxl-0 {
+    margin-left: 0% !important;
+  }
+  .carousel-intro {
+    margin-top: -100px;
+  }
+}
+
+ul.children {
+  margin-top: 0;
 }

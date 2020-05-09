@@ -217,3 +217,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 /* CUSTOME CODE STARTS HERE */
 require_once('bs4navwalker.php');
+
+// Add custom image size (with hard crop) 960*600
+add_image_size('boritokep', 960, 600, true);
+

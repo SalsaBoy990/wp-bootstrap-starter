@@ -4,107 +4,118 @@
     <div class="bg-light-pink container-max-width">
       <div class="container-fluid p0">
         <div class="row mx-responsive p0">
-          <div class="col-12 text-center p0 mt3 m-mt2">
+          <div class="col-12 p0 mt3 m-mt2">
             <h1 class="mt2 main-title mb0 d-none d-sm-none d-md-none d-lg-block">SzlaVi &nbsp;&nbsp;&nbsp; Dance Art Tánciskola</h1>
+            <h1 class="mt2 main-title-xl mb0 d-none">SzlaVi Dance Art Tánciskola</h1>
             <h1 class="text-bg-light mt0 main-title mb0 d-block d-sm-block d-md-block d-lg-none"><?php bloginfo('name'); ?></h1>
           </div>
           <div class="heroes d-none d-sm-none d-md-none d-lg-block">
             <img src="<?php echo get_template_directory_uri() ?>/images/szlavi-boritokep.png" alt="Szlavati Andrea és Vicsek János" />
           </div>
-          <div class="m-align-center col-12 col-sm-10 col-md-7 col-lg-7 col-xl-6 offset-xl-5 offset-lg-5 offset-md-5 offset-sm-1 mb4 pl2 x-pl0">
-            <h2 class="text-bg-white mt0 sub-title mb2 m-mb1">Ahol öröm a tanulás</h2>
+        </div>
+        <div class="row mx-responsive p0">
+          <div class="clearfix col-xxl-4 p0 hide-under-xxl">
+            <img src="<?php echo get_template_directory_uri() ?>/images/szlavi-boritokep.png" alt="Szlavati Andrea és Vicsek János" />
+          </div>
+          <div class="clearfix col-12 col-sm-7 col-md-7 col-lg-7 col-xl-6 col-xxl-6 offset-lg-5 offset-xl-4 offset-xxl-0 mb4 m-mb2 pl2 x-pl0 m-p-tablet-0">
+            <h2 class="mthalf sub-title mb2 "><span class="text-bg-white">Ahol öröm a tanulás</span></h2>
             <?php
             $szlavidanceart_description = get_bloginfo('description', 'display');
             if ($szlavidanceart_description || is_customize_preview()) :
             ?>
-              <p class="text-bg-white site-description mb2"><?php echo $szlavidanceart_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                                            ?></p>
+              <p class="clear-float text-bg-white site-description mb2 mt0"><?php echo $szlavidanceart_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+                                                                        ?></p>
             <?php endif; ?>
-            <nav>
-              <a href="https://www.facebook.com/szlavidanceart/" class="btn mr1 mb1"><i class="ri-facebook-fill ri-xl" style="position: relative; top: 3px;"></i>Kövess Facebook-on</a>
+            <nav class="m-mt-intro-nav">
+              <a href="https://www.facebook.com/szlavidanceart/" class="btn mr1 m-mr0 mb1 m-clear-mr"><i class="ri-facebook-fill ri-xl" style="position: relative; top: 3px;"></i>Kövess Facebook-on</a>
               <a href="https://www.youtube.com/channel/UC4rLXh8fHYvk0kJwiSLCaxA" class="btn mb1"><i class="ri-youtube-line ri-xl mrquarter" style="position: relative; top: 3px;"></i>Kövess Youtube-on</a>
             </nav>
           </div>
         </div>
       </div>
 
-      <div id="myCarouselNews" class="carousel slide container-max-width" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner row w-100 mx-auto">
-          <div class="carousel-inner">
-            <?php
-            $args = array(
-              'post_type' => 'hirek',
-              'orderby' => 'date',
-              'order'   => 'DESC',
-              'posts_per_page' => 1
-            );
+      <div class="bg-light-pink-tablet container-max-width">
+        <div id="myCarouselNews" class="carousel carousel-intro slide container-max-width" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner row w-100 mx-auto">
+            <div class="carousel-inner">
+              <?php
+              $args = array(
+                'post_type' => 'esemenyek',
+                'orderby' => 'date',
+                'order'   => 'DESC',
+                'posts_per_page' => 1
+              );
 
-            $the_query = new WP_Query($args);
-            ?>
-            <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post() ?>
-                <div class="carousel-item active">
-                  <div class="container-fluid p0">
-                    <div class="row mx-responsive p0">
-                      <div class="text-center col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1 p0 m-mt2">
-                        <?php the_post_thumbnail('full') ?>
-                        <div class="carousel-caption d-none d-md-block">
-                          <h3><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
-                          <p><?php echo get_the_excerpt() ?></p>
+              $the_query = new WP_Query($args);
+              ?>
+              <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post() ?>
+                  <div class="carousel-item active">
+                    <div class="container-fluid p0">
+                      <div class="row mx-responsive p0">
+                        <div class="text-center col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1 p0 m-mt2">
+
+                          <?php the_post_thumbnail('boritokep', ['class' => 'mx-auto']) ?>
+
+                          <div class="carousel-caption d-block">
+                            <h3 class="m-carousel-h3"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
+                            <p class="d-none d-sm-block"><?php echo get_the_excerpt() ?></p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              <?php endwhile ?>
-            <?php endif ?>
+                <?php endwhile ?>
+              <?php endif ?>
 
-            <?php wp_reset_postdata(); ?>
+              <?php wp_reset_postdata(); ?>
 
-            <?php
-            $args = array(
-              'post_type' => 'hirek',
-              'orderby' => 'date',
-              'order'   => 'DESC',
-              'offset'  => 1,
-              'posts_per_page' => 1
-            );
+              <?php
+              $args = array(
+                'post_type' => 'esemenyek',
+                'orderby' => 'date',
+                'order'   => 'DESC',
+                'offset'  => 1,
+                'posts_per_page' => 1
+              );
 
-            $the_query = new WP_Query($args);
-            ?>
-            <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post() ?>
-                <div class="carousel-item">
-                  <div class="container-fluid p0">
-                    <div class="row mx-responsive p0">
-                      <div class="text-center col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1 p0 m-mt2">
-                        <?php the_post_thumbnail('full'); ?>
-                        <div class="carousel-caption d-none d-md-block">
-                          <h3><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
-                          <p><?php echo get_the_excerpt() ?></p>
+              $the_query = new WP_Query($args);
+              ?>
+              <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post() ?>
+                  <div class="carousel-item">
+                    <div class="container-fluid p0">
+                      <div class="row mx-responsive p0">
+                        <div class="text-center col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 offset-md-1 offset-lg-1 offset-xl-1 p0 m-mt2">
+                          <?php the_post_thumbnail('boritokep'); ?>
+                          <div class="carousel-caption d-block">
+                            <h3 class="m-carousel-h3"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
+                            <p class="d-none d-sm-block"><?php echo get_the_excerpt() ?></p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              <?php endwhile ?>
-            <?php endif ?>
+                <?php endwhile ?>
+              <?php endif ?>
+              <?php wp_reset_postdata(); ?>
+            </div>
           </div>
+          <a class="carousel-control-prev no-underline mt2" href="#myCarouselNews" role="button" data-slide="prev" style="z-index: 100000;">
+            <span aria-hidden="true">
+              <i class="ri-arrow-left-s-line ri-2x gray-chevron"></i>
+            </span>
+            <span class="sr-only">Előző</span>
+          </a>
+          <a class="carousel-control-next no-underline mt2" href="#myCarouselNews" role="button" data-slide="next">
+            <span aria-hidden="true">
+              <i class="ri-arrow-right-s-line ri-2x gray-chevron"></i>
+            </span>
+            <span class="sr-only">Következő</span>
+          </a>
         </div>
-        <a class="carousel-control-prev no-underline mt2" href="#myCarouselNews" role="button" data-slide="prev" style="z-index: 100000;">
-          <span aria-hidden="true">
-            <i class="ri-arrow-left-s-line ri-2x gray-chevron"></i>
-          </span>
-          <span class="sr-only">Előző</span>
-        </a>
-        <a class="carousel-control-next no-underline" href="#myCarouselNews" role="button" data-slide="next">
-          <span aria-hidden="true">
-            <i class="ri-arrow-right-s-line ri-2x gray-chevron"></i>
-          </span>
-          <span class="sr-only">Következő</span>
-        </a>
       </div>
     </div>
   </section>
@@ -161,7 +172,7 @@
             <h3 class="h5 mthalf">Csoportos táncoktatás</h3>
             <hr class="mbhalf">
             <span>Szegeden</span><br></br>
-            <a title="Facebook események" href="https://www.facebook.com/pg/szlavidanceart/events/" class="btn m-btn-width100 mthalf"><i class="ri-calendar-event-fill service-icon"></i>Kurzusaink</a>
+            <a title="Aktuális eseményeink" href="<?php echo esc_url('/esemenyek') ?>" class="btn m-btn-width100 mthalf"><i class="ri-calendar-event-fill service-icon"></i>Kurzusaink</a>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-3 m-p0">
@@ -211,7 +222,7 @@
         </div>
       </div>
       <div id="myCarousel" class="carousel slide container-max-width" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators opacity-0">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         </ol>
@@ -405,10 +416,10 @@
       <div class="row mx-responsive-left p0 mt4 m-mt2">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 order-2 order-sm-2 order-md-2 order-lg-1 p0 m-pl-16px m-pr-tablet-16px m-pl-tablet-16px m-bg-light pb3">
           <h2 class="h2 mt1 mb1">Gyere és próbáld ki a bachatát!</h2>
-          <p class="mb2 pr2">Csatlakozz a csapatunkhoz! Egy próbát biztosan megér. A Facebook-on nagyon aktívak vagyunk, ott hirdetjük meg táncos eseményeinket. Ne maradj le!</p>
+          <p class="mb1 pr2">Csatlakozz a csapatunkhoz! Egy próbát biztosan megér. A Facebook-on nagyon aktívak vagyunk, ott hirdetjük meg táncos eseményeinket. Ne maradj le!</p>
           <nav>
-            <a href="https://www.facebook.com/szlavidanceart/" class="btn mrhalf m-mbhalf"><i class="ri-facebook-fill ri-xl icon-position-3"></i>Értesülj eseményeinkről</a>
-            <a href="https://www.youtube.com/channel/UC4rLXh8fHYvk0kJwiSLCaxA" class="btn m-mbhalf"><i class="ri-youtube-line ri-xl mrquarter icon-position-3"></i>Kövess Youtube-on</a>
+            <a href="https://www.facebook.com/szlavidanceart/" class="btn mrhalf mt1"><i class="ri-facebook-fill ri-xl icon-position-3"></i>Kövess Faccebook-on</a>
+            <a href="https://www.youtube.com/channel/UC4rLXh8fHYvk0kJwiSLCaxA" class="btn mt1"><i class="ri-youtube-line ri-xl mrquarter icon-position-3"></i>Kövess Youtube-on</a>
           </nav>
           <span class="small-size secondary-gray">Kövesd vagy kedveld az oldalunkat!</span>
         </div>
@@ -496,7 +507,7 @@
       <div class="container-fluid p0">
         <div class="row mx-responsive p0">
           <div class="col-12 text-center p0">
-            <h3 class="h4 mt5 m-mt3 mb1 white">Történetünk</h3>
+            <h3 class="h4 mt5 mb1 white">Történetünk</h3>
           </div>
         </div>
         <div class="row mx-responsive p0 pb3 m-pb2">

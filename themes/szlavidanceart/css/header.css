@@ -18,6 +18,11 @@
   background-color: #ff009b;
   border-bottom: 1px solid #a12e79;
 }
+.bg-pink-contact {
+  background-color: #e4329c;
+  font-size: 14px !important;
+  border-bottom: 1px solid #F29DD1;
+}
 
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.7);
@@ -61,284 +66,274 @@
 
 
 @media (max-width: 1920px) {
-  .main-title {
+  .main-title, .main-title-xl {
     font-size: 66px;
   }
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1441px) {
+  .heroes {
+    display: none !important;
+  }
+
+  .main-title-xl {
+    display: block !important;
+  }
   .main-title {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-title, .main-title-xl {
     font-size: 72px;
   }
   .heroes {
-    top: 160px !important;
-    left: 175px !important;
-    width: 450px !important;
-    z-index: 999 !important;
+    top: 160px;
+    left: 80px;
+    width: 450px;
+    z-index: 999;
   }
 }
 
 @media (max-width: 1439px) {
   .heroes {
-    left: 175px !important;
+    left: 80px;
   }
 }
 
 @media (max-width: 1430px) {
   .heroes {
-    left: 170px !important;
+    left: 80px;
   }
 }
 
 @media (max-width: 1420px) {
   .heroes {
-    left: 165px !important;
+    left: 75px;
   }
 }
 
 @media (max-width: 1400px) {
   .heroes {
-    left: 160px !important;
+    left: 70px;
   }
 }
 
 @media (max-width: 1390px) {
   .heroes {
-    left: 155px !important;
+    left: 70px;
   }
 }
 @media (max-width: 1380px) {
   .heroes {
-    left: 145px !important;
+    left: 70px;
   }
 }
 
 @media (max-width: 1370px) {
   .heroes {
-    left: 140px !important;
+    left: 65px;
   }
 }
 
 @media (max-width: 1360px) {
   .heroes {
-    left: 135px !important;
+    left: 65px;
   }
 }
 
 @media (max-width: 1350px) {
   .heroes {
-    left: 130px !important;
+    left: 60px;
   }
 }
 
 @media (max-width: 1340px) {
   .heroes {
-    left: 130px !important;
+    left: 65px;
   }
 }
 
 @media (max-width: 1330px) {
   .heroes {
-    left: 125px !important;
+    left: 65px;
   }
 }
 
 @media (max-width: 1320px) {
   .heroes {
-    left: 120px !important;
+    left: 70px;
   }
 }
 
 @media (max-width: 1310px) {
   .heroes {
-    left: 115px !important;
+    left: 75px;
   }
 }
 
 
 @media (max-width: 1300px) {
-  .main-title {
+  .main-title, .main-title-xl {
     font-size: 64px;
   }
   .heroes {
-    top: 160px !important;
-    left: 130px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 50px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .heroes {
+    top: 160px;
+    left: 45px;
   }
 }
 
 @media (max-width: 1270px) {
-  .main-title {
+  .main-title, .main-title-xl {
     font-size: 64px;
   }
   .heroes {
-    top: 160px !important;
-    left: 125px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1250px) {
   .heroes {
-    top: 160px !important;
-    left: 120px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1240px) {
   .heroes {
-    top: 160px !important;
-    left: 115px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1230px) {
   .heroes {
-    top: 160px !important;
-    left: 110px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1220px) {
   .heroes {
-    top: 160px !important;
-    left: 105px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1210px) {
   .heroes {
-    top: 160px !important;
-    left: 100px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1200px) {
   .heroes {
-    top: 160px !important;
-    left: 95px !important;
-    width: 450px !important;
+    top: 160px;
+    left: 40px;
   }
 }
 
 @media (max-width: 1190px) {
-  .main-title {
-    margin-left: -50px !important;
+  .main-title, .main-title-xl {
     font-size: 58px;
   }
   .heroes {
     top: 150px;
-    left: 80px !important;
-    width: 450px !important;
+    left: 25px;
     z-index: 999;
   }
 }
 
 
 @media (max-width: 1170px) {
-  .main-title {
-    margin-left: -30px !important;
-  }
-}
-
-@media (max-width: 1130px) {
-  .main-title {
-    margin-left: -15px !important;
-  }
-}
-
-@media (max-width: 1120px) {
-  .main-title {
-    margin-left: 0px !important;
+  .heroes {
+    top: 150px;
+    left: 20px;
   }
 }
 
 @media (max-width: 1110px) {
-  .main-title {
-    margin-left: 10px !important;
-  }
   .heroes {
-    top: 155px !important;
-    left: 70px !important;
+    top: 155px;
+    left: 20px;
     
   }
 }
 
 @media (max-width: 1090px) {
-  .main-title {
+  .main-title, .main-title-xl {
     font-size: 58px;
   }
   .heroes {
-    top: 155px !important;
-    left: 70px !important;
-    width: 430px !important;
+    top: 155px;
+    left: 25px;
+    width: 430px;
   }
 }
 
 @media (max-width: 1060px) {
-  .main-title {
-    font-size: 58px;
-  }
   .heroes {
-    left: 55px !important;
-  }
-}
-
-@media (max-width: 1030px) {
-  .main-title {
-    font-size: 58px;
-  }
-  .heroes {
-    left: 50px !important;
-  }
-}
-
-@media (max-width: 1030px) {
-  .main-title {
-    font-size: 58px;
-  }
-  .heroes {
-    left: 50px !important;
+    left: 25px;
   }
 }
 
 @media (max-width: 1030px) {
   .heroes {
-    left: 45px !important;
+    left: 30px;
   }
 }
+
 
 @media (max-width: 1020px) {
   .heroes {
-    left: 40px !important;
+    left: 20px;
   }
 }
 
 @media (max-width: 1010px) {
   .heroes {
-    left: 35px !important;
+    left: 20px;
   }
 }
 
 
-@media (max-width: 992px) {
-  .main-title {
+@media (max-width: 991px) {
+  .main-title, .main-title-xl {
     font-size: 52px;
+    margin-left: 0px;
+  }
+  .m-p-tablet-0 {
+    padding: 0;
   }
   .heroes {
-    left: 30px !important;
+    left: 20px;
+  }
+}
+
+@media (max-width: 817px) {
+  .main-title, .main-title-xl {
+    font-size: 48px;
   }
 }
 
 
 @media (max-width: 768px) {
-  .main-title {
-    font-size: 48px;
+  .main-title, .main-title-xl {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 24px;
   }
   .navbar-img {
     height: 36px;
@@ -351,17 +346,18 @@
 }
 
 @media (max-width: 576px) {
-  .main-title {
-    font-size: 40px;
+  .main-title, .main-title-xl {
+    font-size: 32px;
   }
   .sub-title {
-    font-size: 24px;
+    font-size: 20px;
   }
+
 }
 
 
-@media (max-width: 768px) {
-  .heroes {
+/* @media (max-width: 768px) {
+ .heroes {
     position: absolute;
     top: 145px;
     left: 10px;
@@ -372,5 +368,4 @@
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
   }
-}
-
+} */
