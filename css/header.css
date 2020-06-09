@@ -1,0 +1,180 @@
+/* HEADER */
+.navbar-img {
+  height: 50px;
+  width: 50px;
+}
+
+#navbarCollapse {
+  z-index: 99999;
+}
+
+.navbar-brand {
+  font-family: "Roboto" "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 22px;
+}
+
+.bg-yellow {
+  background-color: #FEE1BB;
+}
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: rgb(254, 221, 241);
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(254, 221, 241)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.tab {
+  padding-left: 10px;
+}
+
+.main-title {
+  font-size: 54px;
+  color: #12090c;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  color: #9b9b9b;
+}
+
+
+@media (max-width: 1920px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 66px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .main-title-xl {
+    display: block !important;
+  }
+  .main-title {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 72px;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 64px;
+  }
+}
+
+
+@media (max-width: 1270px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 64px;
+  }
+}
+
+
+@media (max-width: 1190px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 58px;
+  }
+}
+
+
+@media (max-width: 1090px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 58px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 52px;
+    margin-left: 0px;
+  }
+  .m-p-tablet-0 {
+    padding: 0;
+  }
+  .heroes {
+    left: 20px;
+  }
+}
+
+@media (max-width: 817px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 40px;
+  }
+  .sub-title {
+    font-size: 24px;
+  }
+  .navbar-img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-title,
+  .main-title-xl {
+    font-size: 32px;
+  }
+  .sub-title {
+    font-size: 20px;
+  }
+}
+
+/* WEBSHOP */
+.cart-amount {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.cart-count {
+  color: #ccc;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px !important;
+}
+
+.shopping-bag i {
+  color: #ccc;
+}
+.shopping-bag {
+  font-size: 16px;
+  color: #FFF;
+}

@@ -1,0 +1,134 @@
+/* CUSTOM VARIABLES
+For convinience set the fonts, sizes, colors here and use them elsewhere
+*/
+
+
+// Fonts
+$branding-font: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+$body-font:     'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+$heading-font:  'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+
+.dancing-script {
+  font-family: $branding-font;
+}
+.roboto {
+  font-family: $heading-font;
+}
+
+
+// Size Variables
+$baseline:    1.5rem /* 30px */;
+$base-size:   16px;
+$lheight:     1.5;
+$h1-size:     3.75rem;
+$h2-size:     2.635rem;
+$h2-size-2:   calc(42px / 16px);
+$h3-size:     2.25rem;
+$h4-size:     1.5rem;
+$h5-size:     1.25rem;
+$medium-size: 0.875rem;
+$small-size:  0.875rem;
+$min-size:    0.75rem;
+
+
+// Function to calculate margin or padding sizes (n times the baseline grid size)
+@function margin-size($n) {
+  @return $n * $baseline;
+}
+
+
+.base-size {
+  font-size: $base-size;
+}
+
+.medium-size {
+  font-size: $medium-size;
+}
+.small-size {
+  font-size: $small-size;
+}
+.min-size {
+  font-size: $min-size;
+}
+.h2-size-42 {
+  font-size: $h2-size-2;
+}
+
+
+// Color Variables
+$black-heading:   #12090C;
+$black-body:      #242223;
+$gray-body:       #474145;
+$secondary-gray:  #7C787A;
+$tertiary-gray:   #9B9B9B;
+$light-gray:      #FEDDF1;
+$lighter-gray:    rgb(255, 248, 252);
+$white:           #fff;
+$white-opa60:     rgba(255, 255, 255, 0.60);
+$bg-light-gray:   #C6BEC3;
+$bg-dark-gray:    #74616D;
+
+$pink:            #FF009B;
+$pink-btn-text:   #DE0087;
+$pink-btn-icon:   #E91D98;
+$light-pink:      #F29DD1;
+
+$cyan-opa85:      rgba(120, 239, 255, 0.85);
+$libh-blue-opa90: rgba(166, 218, 255, 0.9);
+// $blue:            #2A3E94;
+// $blue:            rgb(97, 91, 197);
+$blue:            rgb(76, 70, 184);
+$success:         #1C7E26;
+$info:            #FFE7C7;
+$error:           rgb(230, 213, 217);
+$error-dark:      #B44862;
+
+.bg-blue {
+  background: $blue;
+  color: $white;
+}
+
+.bg-success {
+  padding: margin-size(0.5);
+  background: $success;
+  color: $white;
+}
+.bg-notice {
+  padding: margin-size(0.5) !important;
+  background: $info !important;
+}
+.bg-error {
+  padding: margin-size(0.5);
+  background: $error;
+}
+
+$email-gray:    rgb(240, 232, 236);
+.bg-lighter-gray {
+  border: 2px double $tertiary-gray;
+  border-radius: 4px;
+  padding: margin-size(1.5) margin-size(0.5);
+  background: $email-gray;
+}
+
+
+.secondary-gray {
+  color: $secondary-gray;
+}
+
+.black-body {
+  color: $black-body;
+}
+
+.white {
+  color: $white;
+}
+
+.footer-dark {
+  width: 100%;
+  background-color: $bg-dark-gray;
+  height: 60px;
+  line-height: 60px;
+}
+
+
+

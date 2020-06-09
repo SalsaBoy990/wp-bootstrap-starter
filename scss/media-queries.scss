@@ -1,0 +1,370 @@
+/* MEDIA QUERIES
+Main breakpoints: 576, 768, 992, 1024, 1440, 1920 pixels
+Generally keep these settings above, .mx-responsive is very important
+Create additional media queries if needed
+Lots of customization needed, especially for mobile
+*/
+@media (max-width: 1920) {
+  .x-pl0 {
+    padding-left: 0;
+  }
+  .mx-responsive,
+  .mx-responsive-mobile-0 {
+    margin-left: margin-size(5) !important;
+    margin-right: margin-size(5) !important;
+  }
+
+  .mx-responsive-left,
+  .mx-responsive-left-page {
+    margin-left: margin-size(5) !important;
+    margin-right: 0 !important;
+  }
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: margin-size(5) !important;
+  }
+}
+
+@media (min-width: 1441px) {
+  body,
+  html {
+    font-size: 22px;
+  }
+  .mx-responsive,
+  .mx-responsive-mobile-0 {
+    margin-left: margin-size(4) !important;
+    margin-right: margin-size(4) !important;
+  }
+
+  .mx-responsive-left,
+  .mx-responsive-left-page {
+    margin-left: margin-size(4) !important;
+    margin-right: 0 !important;
+  }
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: margin-size(4) !important;
+  }
+}
+
+@media (min-width: 1300px) {
+  body,
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .mx-responsive,
+  .mx-responsive-mobile-0 {
+    margin-left: margin-size(2) !important;
+    margin-right: margin-size(2) !important;
+  }
+
+  .mx-responsive-left,
+  .mx-responsive-left-page {
+    margin-left: margin-size(2) !important;
+    margin-right: 0 !important;
+  }
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: margin-size(2) !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mx-responsive,
+  .mx-responsive-mobile-0 {
+    margin-left: margin-size(1.5) !important;
+    margin-right: margin-size(1.5) !important;
+  }
+
+  .mx-responsive-left,
+  .mx-responsive-left-page {
+    margin-left: margin-size(1.5) !important;
+    margin-right: 0 !important;
+  }
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: margin-size(1.5) !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .mx-responsive-right,
+  .mx-responsive-left {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .mx-responsive-left-page {
+    margin-left: margin-size(1.5) !important;
+    margin-right: 0 !important;
+  }
+
+  .m-bg-light {
+    width: 100%;
+    background: #fff5fb;
+  }
+
+  .m-pr-tablet-16px {
+    padding-right: margin-size(1.5) !important;
+  }
+  .m-pl-tablet-16px {
+    padding-left: margin-size(1.5) !important;
+  }
+
+  .m-pl-page {
+    padding-left: margin-size(1.5) !important;
+  }
+  .m-pr-page {
+    padding-right: margin-size(1.5) !important;
+  }
+  .m-pb-tablet-0 {
+    padding-bottom: margin-size(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .m-mt2-tablet {
+    margin-top: margin-size(2);
+  }
+  .m-align-center {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .m-mt-intro-nav {
+    margin-top: margin-size(0) !important;
+  } 
+}
+
+@media (max-width: 841px) {
+  .m-mr-intro-nav {
+    margin-right: margin-size(2) !important;
+  } 
+}
+
+@media (max-width: 767px) {
+  .m-mt-intro-nav {
+    margin-top: margin-size(4) !important;
+  } 
+  .m-mt-intro {
+    margin-top: margin-size(3) !important;
+  } 
+}
+@media (max-width: 576px) {
+  .m-mt-intro-nav {
+    margin-top: margin-size(6);
+  } 
+}
+
+
+@media (min-width: 320px) {
+  .m-mt10 {
+    margin-top: margin-size(10);
+  }
+  .m-mt-tablet-4 {
+    margin-top: margin-size(4);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .m-mr0 {
+    margin-right: 0;
+  }
+  .mx-responsive {
+    margin-left: margin-size(1) !important;
+    margin-right: margin-size(1) !important;
+  }
+
+  .mx-responsive-left-page {
+    margin-left: margin-size(1) !important;
+    margin-right: 0 !important;
+  }
+
+  .m-pl-page {
+    padding-left: margin-size(1) !important;
+  }
+  .m-pr-page {
+    padding-right: margin-size(1) !important;
+  }
+
+  .m-pr-tablet-16px {
+    padding-right: margin-size(1) !important;
+  }
+  .m-pl-tablet-16px {
+    padding-left: margin-size(1) !important;
+  }
+
+  .mx-responsive-mobile-0,
+  .mx-responsive-left,
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* CUSTOM MOBILE MARGINS */
+  .m-pr-16px {
+    padding-right: 16px;
+  }
+  .m-pl0 {
+    padding-left: 0;
+  }
+
+  .m-mt0 {
+    margin-top: margin-size(0);
+  }
+  .m-mt1 {
+    margin-top: margin-size(1);
+  }
+  .m-mt2 {
+    margin-top: margin-size(2);
+  }
+  .m-mt3 {
+    margin-top: margin-size(3);
+  }
+
+  .m-mbhalf {
+    margin-bottom: margin-size(0.5);
+  }
+  .m-mb1 {
+    margin-bottom: margin-size(1);
+  }
+  .m-mb2 {
+    margin-bottom: margin-size(2);
+  }
+  .m-mb3 {
+    margin-bottom: margin-size(3);
+  }
+  .m-mb4 {
+    margin-bottom: margin-size(4);
+  }
+
+  .m-ml0 {
+    margin-left: 0;
+  }
+
+  .m-mx0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .m-pl-16px {
+    padding-left: 16px;
+  }
+
+  .m-pr0 {
+    padding-right: 0;
+  }
+
+  .m-pt2 {
+    padding-top: margin-size(2);
+  }
+  .m-pb2 {
+    padding-bottom: margin-size(2);
+  }
+  .m-pb0 {
+    padding-bottom: margin-size(0);
+  }
+
+  .m-p0 {
+    padding: 0px;
+  }
+  .m-p-service-box {
+    padding: margin-size(1) margin-size(0.5);
+  }
+
+  .m-align-left {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+
+  .m-btn-width100 {
+    width: 75%;
+  }
+
+  .bg-napocska {
+    background-size: 75% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .m-clear-float {
+    float: none !important;
+  }
+}
+
+@media (max-width: 963px) {
+  .m-clear-mr {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .m-carousel-h3 {
+    margin-top: margin-size(1);
+    font-size: 24px;
+  }
+
+  .bg-napocska {
+    background-size: 100% !important;
+  }
+
+  .m-btn-width100 {
+    width: 100%;
+  }
+
+  .m-clear-float {
+    float: none !important;
+  }
+
+  .m-mrquarter {
+    margin-right: margin-size(0.25);
+  }
+
+  .mx-responsive {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+  .mx-responsive-mobile-0,
+  .mx-responsive-left,
+  .mx-responsive-left-page,
+  .mx-responsive-right {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .m-pl-page,
+  .m-pl-tablet-16px {
+    padding-left: 16px !important;
+  }
+  .m-pr-page,
+  .m-pr-tablet-16px {
+    padding-right: 16px !important;
+  }
+
+  h1,
+  .h1 {
+    font-size: 38px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 28px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 18px;
+  }
+}
